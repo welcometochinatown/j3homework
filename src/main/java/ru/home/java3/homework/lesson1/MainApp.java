@@ -32,6 +32,17 @@ public class MainApp {
         swapPlaces(strings);
         System.out.println(Arrays.toString(strings));
 
+        Fruit fruit1 = new Fruit(1.2f);
+        Fruit fruit2 = new Fruit(1.2f);
+
+        Object[] objects = {fruit1, fruit2};
+        System.out.println("До свапа index[0] : " + objects[0]);
+        System.out.println("До свапа index[1] : " + objects[1]);
+        swapPlaces(objects);
+        System.out.println("После свапа index[0] : " + objects[0]);
+        System.out.println("После свапа index[1] : " + objects[1]);
+        System.out.println(convertToList(objects));
+
         System.out.println(convertToList(strings));
     }
 
