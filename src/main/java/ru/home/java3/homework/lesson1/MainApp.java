@@ -1,5 +1,8 @@
 package ru.home.java3.homework.lesson1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainApp {
     /*
     1. Написать метод, который меняет два элемента массива местами
@@ -24,6 +27,21 @@ public class MainApp {
     */
 
     public static void main(String[] args) {
+        String[] strings = {"A", "B"};
+        System.out.println(Arrays.toString(strings));
+        swapPlaces(strings);
+        System.out.println(Arrays.toString(strings));
 
+        System.out.println(convertToList(strings));
+    }
+
+    public static void swapPlaces(Object[] objects) {
+        Object temp = objects[0];
+        objects[0] = objects[1];
+        objects[1] = temp;
+    }
+
+    public static <T> ArrayList<T> convertToList(T[] array) {
+        return new ArrayList<>(Arrays.asList(array));
     }
 }
