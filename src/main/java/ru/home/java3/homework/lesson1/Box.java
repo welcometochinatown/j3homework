@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Box<T extends Fruit> {
     private ArrayList<T> fruits;
 
-    public Box(ArrayList<T> fruits) {
-        this.fruits = fruits;
+    public Box() {
+        fruits = new ArrayList<T>();
     }
 
     public float getWeight() {
