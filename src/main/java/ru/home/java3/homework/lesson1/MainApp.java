@@ -27,23 +27,31 @@ public class MainApp {
     */
 
     public static void main(String[] args) {
-        String[] strings = {"A", "B"};
-        System.out.println(Arrays.toString(strings));
-        swapPlaces(strings);
-        System.out.println(Arrays.toString(strings));
+        Apple apple = new Apple();
+        Orange orange = new Orange();
+        System.out.println(apple.getWeight());
+        System.out.println(orange.getWeight());
 
-        Fruit fruit1 = new Fruit(1.2f);
-        Fruit fruit2 = new Fruit(1.2f);
+//        Box<Apple> box1 = new Box<>(apple);
 
-        Object[] objects = {fruit1, fruit2};
-        System.out.println("До свапа index[0] : " + objects[0]);
-        System.out.println("До свапа index[1] : " + objects[1]);
-        swapPlaces(objects);
-        System.out.println("После свапа index[0] : " + objects[0]);
-        System.out.println("После свапа index[1] : " + objects[1]);
-        System.out.println(convertToList(objects));
 
-        System.out.println(convertToList(strings));
+//        String[] strings = {"A", "B"};
+//        System.out.println(Arrays.toString(strings));
+//        swapPlaces(strings);
+//        System.out.println(Arrays.toString(strings));
+//
+//        Fruit fruit1 = new Fruit(1.2f);
+//        Fruit fruit2 = new Fruit(1.2f);
+//
+//        Object[] objects = {fruit1, fruit2};
+//        System.out.println("До свапа index[0] : " + objects[0]);
+//        System.out.println("До свапа index[1] : " + objects[1]);
+//        swapPlaces(objects);
+//        System.out.println("После свапа index[0] : " + objects[0]);
+//        System.out.println("После свапа index[1] : " + objects[1]);
+//        System.out.println(convertToList(objects));
+//
+//        System.out.println(convertToList(strings));
     }
 
     public static void swapPlaces(Object[] objects) {
